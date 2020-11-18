@@ -1,4 +1,5 @@
-import TVNoise from "./TVNoise";
+import TVNoise from "./Incidents/TVNoise";
+import ImageGlitch from "./Incidents/ImageGlitch";
 
 export default {
   npm_name: "@kissmybutton/motorcortex-tv",
@@ -28,5 +29,15 @@ export default {
         },
       },
     },
+    {
+        exportable: ImageGlitch,
+        name: "ImageGlitch",
+        attributesValidationRules: {
+            imgUrl: {
+                type: "string",
+                optional: false
+            }
+        }
+    }
   ],
 };
