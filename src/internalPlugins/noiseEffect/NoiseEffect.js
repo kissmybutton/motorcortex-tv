@@ -1,6 +1,6 @@
-import MotorCortex from "@kissmybutton/motorcortex";
+import { Effect } from "@kissmybutton/motorcortex";
 
-export default class NoiseEffect extends MotorCortex.Effect {
+export default class NoiseEffect extends Effect {
   onGetContext() {
     this.time = 0;
     this.canvasContext = this.element.getContext("2d");

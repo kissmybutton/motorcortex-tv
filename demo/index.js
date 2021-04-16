@@ -4,17 +4,18 @@ import TVPluginDef from "../dist/motorcortex-tv.umd";
 const TVPlugin = loadPlugin(TVPluginDef);
 
 const myClip = new HTMLClip({
-  html: `<div>
-    <div id="container"></div>
-    <div id="glitchContainer"></div>
- </div>    
-`,
+  html: `
+    <div>
+      <div id="container"></div>
+      <div id="glitchContainer"></div>
+    </div>    
+  `,
   css: `
-        #container, #glitchContainer{
-            width: 800px;
-            height: 600px;
-        }
-    `,
+    #container, #glitchContainer{
+      width: 800px;
+      height: 600px;
+    }
+  `,
   host: document.getElementById("clip"),
   containerParams: {
     width: "800px",
@@ -34,15 +35,19 @@ const tvNoise = new TVPlugin.TVNoise(
   }
 );
 
-const imageGlitch = new TVPlugin.ImageGlitch({
-    imgUrl: "https://images.hdqwalls.com/wallpapers/minimal-sunset-landscape-4k-w5.jpg"
-}, {
+const imageGlitch = new TVPlugin.ImageGlitch(
+  {
+    imgUrl:
+      "https://images.hdqwalls.com/wallpapers/minimal-sunset-landscape-4k-w5.jpg",
+  },
+  {
     selector: "#glitchContainer",
     containerParams: {
-        width: "800px",
-        height: "600px"
-    }
-});
+      width: "800px",
+      height: "600px",
+    },
+  }
+);
 
 myClip.addIncident(tvNoise, 0);
 myClip.addIncident(imageGlitch, 0);

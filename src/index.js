@@ -1,8 +1,10 @@
 import TVNoise from "./Incidents/TVNoise";
 import ImageGlitch from "./Incidents/ImageGlitch";
+import { name, version } from "../package.json";
 
 export default {
-  npm_name: "@kissmybutton/motorcortex-tv",
+  npm_name: name,
+  version,
   incidents: [
     {
       exportable: TVNoise,
@@ -30,14 +32,14 @@ export default {
       },
     },
     {
-        exportable: ImageGlitch,
-        name: "ImageGlitch",
-        attributesValidationRules: {
-            imgUrl: {
-                type: "string",
-                optional: false
-            }
-        }
-    }
+      exportable: ImageGlitch,
+      name: "ImageGlitch",
+      attributesValidationRules: {
+        imgUrl: {
+          type: "string",
+          optional: false,
+        },
+      },
+    },
   ],
 };

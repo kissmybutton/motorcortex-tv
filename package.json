@@ -70,7 +70,7 @@
     }
   },
   "peerDependencies": {
-    "@kissmybutton/motorcortex": "6.0.3"
+    "@kissmybutton/motorcortex": "^6.4.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -78,8 +78,12 @@
     "@babel/preset-env": "^7.9.0",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@kissmybutton/motorcortex": "6.0.3",
-    "@kissmybutton/motorcortex-player": "^1.5.1",
+    "@kissmybutton/motorcortex": "6.4.1",
+    "@kissmybutton/motorcortex-player": "^1.9.4",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/github": "^7.0.5",
@@ -108,7 +112,6 @@
     "imports-loader": "^0.8.0",
     "json-stringify-safe": "^5.0.1",
     "lint-staged": "^10.1.1",
-    "node-sass": "^4.13.1",
     "npm-check-updates": "^4.1.0",
     "npx": "^10.2.2",
     "prettier": "^2.0.2",
