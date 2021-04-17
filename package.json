@@ -73,9 +73,9 @@
     "@kissmybutton/motorcortex": "^6.4.1"
   },
   "devDependencies": {
-    "@babel/cli": "7.12.1",
-    "@babel/core": "7.12.3",
-    "@babel/preset-env": "7.12.1",
+    "@babel/cli": "7.13.14",
+    "@babel/core": "7.13.15",
+    "@babel/preset-env": "7.13.15",
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "@kissmybutton/motorcortex": "6.4.1",
@@ -89,7 +89,7 @@
     "@semantic-release/github": "7.1.1",
     "@semantic-release/npm": "7.0.6",
     "babel-eslint": "10.1.0",
-    "babel-loader": "8.2.1",
+    "babel-loader": "8.2.2",
     "browserslist": "4.14.7",
     "caniuse-lite": "1.0.30001157",
     "commitizen": "4.2.2",
