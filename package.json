@@ -1,6 +1,6 @@
 {
   "name": "@kissmybutton/motorcortex-tv",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TV animations for MotorCortex",
   "main": "dist/motorcortex-tv.cjs.js",
   "module": "dist/motorcortex-tv.esm.js",
@@ -70,7 +70,7 @@
     }
   },
   "peerDependencies": {
-    "@kissmybutton/motorcortex": "^6.4.1"
+    "@kissmybutton/motorcortex": "7.2.2"
   },
   "devDependencies": {
     "@babel/cli": "7.14.5",
@@ -78,8 +78,8 @@
     "@babel/preset-env": "7.14.5",
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
-    "@kissmybutton/motorcortex": "6.4.3",
-    "@kissmybutton/motorcortex-player": "1.9.4",
+    "@kissmybutton/motorcortex": "7.2.2",
+    "@kissmybutton/motorcortex-player": "2.0.12",
     "@rollup/plugin-babel": "5.3.0",
     "@rollup/plugin-commonjs": "18.1.0",
     "@rollup/plugin-json": "4.1.0",
