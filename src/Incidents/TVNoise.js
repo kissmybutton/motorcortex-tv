@@ -7,7 +7,7 @@ import base64Sound from "../assets/sound";
 export default class TVNoise extends HTMLClip {
   get html() {
     return `
-      <div class="bg"> 
+      <div class="bg">
           <canvas id="tv" width="${this.attrs.width}" height="${this.attrs.height}"></canvas>
       </div>
     `;
@@ -32,7 +32,7 @@ export default class TVNoise extends HTMLClip {
   }
 
   buildTree() {
-    const duration = this.attrs.duration;
+    const duration = this.props.duration || 2000;
     const noiseEffect = new NoiseEffectPlugin.NoiseEffect(
       {
         animatedAttrs: {
@@ -48,14 +48,14 @@ export default class TVNoise extends HTMLClip {
     this.addIncident(noiseEffect, 0);
 
     if (this.attrs.sound === true) {
-      for (let i = 0; i < this.attrs.duration - 4000; i += 4000) {
+      for (let i = 0; i < duration - 4000; i += 4000) {
         const sound = new AudioPlayback({
           selector: "~#static",
           duration: 4000,
         });
         this.addIncident(sound, i * 4000);
       }
-      const leftovers = this.attrs.duration % 4000;
+      const leftovers = duration % 4000;
       const leftoverSound = new AudioPlayback({
         selector: "~#static",
         duration: leftovers,
