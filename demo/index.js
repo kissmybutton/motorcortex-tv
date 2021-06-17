@@ -8,7 +8,7 @@ const myClip = new HTMLClip({
     <div>
       <div id="container"></div>
       <div id="glitchContainer"></div>
-    </div>    
+    </div>
   `,
   css: `
     #container, #glitchContainer{
@@ -27,10 +27,10 @@ const tvNoise = new TVPlugin.TVNoise(
   {
     width: 800,
     height: 600,
-    duration: 6000,
     sound: true,
   },
   {
+    duration: 6000,
     selector: "#container",
   }
 );

@@ -29,10 +29,10 @@ const tvNoise = new TVPlugin.TVNoise(
   {
     width: 800,
     height: 600,
-    duration: 6000,
     sound: true,
   },
   {
+    duration: 6000,
     selector: "#container",
   }
 );

@@ -10,11 +10,6 @@ export default {
       exportable: TVNoise,
       name: "TVNoise",
       attributesValidationRules: {
-        duration: {
-          optional: false,
-          type: "number",
-          min: 1,
-        },
         width: {
           optional: false,
           type: "number",
