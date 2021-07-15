@@ -1,6 +1,6 @@
 {
   "name": "@kissmybutton/motorcortex-tv",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "TV animations for MotorCortex",
   "main": "dist/motorcortex-tv.cjs.js",
   "module": "dist/motorcortex-tv.esm.js",
